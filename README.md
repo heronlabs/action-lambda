@@ -1,4 +1,4 @@
-# ⚡ action-lambda-publish — Update Lambda container image
+# ⚡ action-lambda — Update Lambda container image
 
 [![CI][ci-badge]][ci-url]
 [![License: MIT][license-badge]][license-url]
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Deploy to Lambda
-        uses: heronlabs/action-lambda-publish@v3
+        uses: heronlabs/action-lambda@v3
         with:
           AWS_ROLE_TO_ASSUME: arn:aws:iam::123456789012:role/github-actions-lambda-deploy
           AWS_REGION: us-east-1
@@ -147,8 +147,8 @@ This composite action assumes an IAM role via OIDC (no static credentials) and r
 
 MIT
 
-[ci-badge]: https://github.com/heronlabs/action-lambda-publish/actions/workflows/continuous-integration.yml/badge.svg
-[ci-url]: https://github.com/heronlabs/action-lambda-publish/actions/workflows/continuous-integration.yml
+[ci-badge]: https://github.com/heronlabs/action-lambda/actions/workflows/continuous-integration.yml/badge.svg
+[ci-url]: https://github.com/heronlabs/action-lambda/actions/workflows/continuous-integration.yml
 [license-badge]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: ./LICENSE
 [marketplace-badge]: https://img.shields.io/badge/GitHub-Marketplace-green.svg

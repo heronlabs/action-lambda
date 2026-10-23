@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Minimal `aws` stub for action-lambda-publish offline tests.
+# Minimal `aws` stub for action-lambda offline tests.
 #
 # Emulates only the aws surface the action uses:
 #   aws lambda update-function-code --function-name N --image-uri URI  -> no-op (exit 0)
